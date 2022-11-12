@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./img/pexels-photo-1478685.jpeg");
+    background-size: cover;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+.typing{
+    margin-left: 10px;
+    color:rgb(61, 209, 214);
+}
+
+.typing::after{
+    content:"";
+    border-left:2px solid white;
+    margin-left: 5px;
+    animation: blink 0.5s infinite ease;
+}
+
+h1{
+    font-size:3rem;
+}
+
+@keyframes blink{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
